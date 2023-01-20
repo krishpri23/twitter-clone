@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: antiquewhite;
+   
+}
+
+
+
+.tweet-input-area, .logo-header{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+ 
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.button {
+  margin-left: 70px;
+}
+.tweet-btn {
+    background-color: lightskyblue;
+    height: 40px;
+    width: 150px;
+
+    color: black;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logo,.user-profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.feed {
+    background-color:lightgoldenrodyellow;
+}
+
+/* Tweet feed */
+
+.tweet-div{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;;
+    border-top: 1px solid grey;
+    padding: 5px 20px;
+}   
+.tweet-data {
+    display: flex;
+    gap: 40px;
+}
+
+.liked {
+   color: red;
+    
+}
+
+.retweeted { 
+    color: green;
+}
+.tweet-content {
+font-size: 16px;
+}
+
+
+.tweet-replies {
+    display: flex;
+    gap: 14px;
+    border-top: 1px solid grey;
+    width: 400px;
+    margin-left: 100px;
+    padding-left: 30px;
+    
+}
+
+.hidden { 
+    display: none;
+}
