@@ -1,9 +1,7 @@
 import { tweetsData } from "./data.js";
 
 const tweetBtn = document.getElementById('tweet-btn')
-const tweetFeed = document.getElementById('feed')
 
-tweetBtn.addEventListener('click', getFeed())
 
 document.addEventListener('click', function (e) {
     if (e.target.dataset.like) {
@@ -76,11 +74,13 @@ function getFeed() {
             retweetClass = 'retweeted'
         }
 
+
         if (tweet.replies.length > 0) {
+
             tweet.replies.forEach(function (reply) {
-                console.log(reply)
+
                 getReplyFeed += `
-               
+            
                <div class="tweet-replies">
                     <div class="profile-pic">
                       <img src="${reply.profilePic}" class="user-profile-pic" alt="Tom cruise profile pic">
@@ -129,9 +129,13 @@ function getFeed() {
     `
     })
 
-    tweetFeed.innerHTML = getFeed
-
-
+    return getFeed
 }
 
-getFeed()
+
+
+function render() {
+    document.getElementById('feed').innerHTML = getFeed()
+}
+
+render()
