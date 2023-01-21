@@ -1,9 +1,14 @@
 # twitter-clone
-Twitter clone using JS
+Twitter clone using HTML5, CSS, JS
+
+## Challenge
+
+Users should be able to post a tweet, view replies, like and retweet a tweet.
 
 
-## PROBLEM : 
-## while displaying replies from each tweet, last tweet's reply has all 4 replies included
+    
+## Challenges faced 
+### Reply tweets showed all replies for the last tweet
 
-## SOLUTION :
-## Fixing the scope of `getReplyFeed` variable
+## Solution 
+### Fixing the scope of `getReplyFeed` variable
