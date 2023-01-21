@@ -1,7 +1,10 @@
 import { tweetsData } from "./data.js";
 
-const tweetBtn = document.getElementById('tweet-btn')
 
+const tweetBtn = document.getElementById('tweet-btn')
+const tweetInput = document.getElementById('tweet-input')
+
+tweetBtn.addEventListener('click', handleBtnClick)
 
 document.addEventListener('click', function (e) {
     if (e.target.dataset.like) {
@@ -16,6 +19,29 @@ document.addEventListener('click', function (e) {
     }
 
 })
+
+function handleBtnClick() {
+
+    if (tweetInput.value.length > 2) {
+
+        const userObj = {
+
+            handle: `@KpSham`,
+            profilePic: `images/troll.jpg`,
+            likes: 0,
+            retweets: 0,
+            tweetText: tweetInput.value,
+            replies: [],
+            isLiked: false,
+            isRetweeted: false,
+            uuid: uuidv4(),
+
+        }
+        tweetsData.unshift(userObj)
+        console.log(userObj.uuid)
+    }
+    render()
+}
 
 function handleLike(tweetId) {
 
