@@ -34,7 +34,7 @@ function handleBtnClick() {
             replies: [],
             isLiked: false,
             isRetweeted: false,
-            uuid: uuidv4(),
+            uuid: 'asdjasdj-q3423584u8hfsihe8',
 
         }
         tweetsData.unshift(userObj)
