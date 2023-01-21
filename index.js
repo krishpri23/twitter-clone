@@ -58,13 +58,13 @@ function handleReply(tweetId) {
 
 function getFeed() {
     let getFeed = ``
-    let getReplyFeed = ``
+
 
 
     tweetsData.forEach(function (tweet) {
         let likeClass = ' '
         let retweetClass = ' '
-
+        let getReplyFeed = ` `
 
         if (tweet.isLiked) {
             likeClass = 'liked'
