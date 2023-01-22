@@ -5,10 +5,9 @@ Twitter clone using HTML5, CSS, JS
 
 Users should be able to post a tweet, view replies, like and retweet a tweet.
 
-
     
-## Challenges faced 
-### Reply tweets showed all replies for the last tweet
+## Challenges faced
 
-## Solution 
-### Fixing the scope of `getReplyFeed` variable
+### Reply tweets displayed all replies for the last tweet
+
+- Solution : Fixing the scope of `getReplyFeed` variable
